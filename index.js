@@ -1,7 +1,8 @@
-var app = require('express').createServer();
+var express = require('express');
+var app = express();
 
-app.get('/',function(req,res){
-    return 'Hola mundito <3';
+app.get('/mundo',function(req,res){
+    res.send('Hola mundito hermoso <3');
 });
 
-app.listen(8080);
+app.listen(4000);
